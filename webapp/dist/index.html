@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OmegaDL GUI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'system-ui', '-apple-system', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'Noto Sans', 'Liberation Sans', 'sans-serif', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'],
+              mono: ['JetBrains Mono', 'monospace'],
+            },
+            colors: {
+              background: '#0b0f15',
+              surface: '#181b21',
+              surfaceHighlight: '#22262e',
+              primary: '#3b82f6',
+              primaryHover: '#2563eb',
+              textMain: '#e2e8f0',
+              textMuted: '#94a3b8',
+              border: '#2d333b',
+              glass: 'rgba(24, 27, 33, 0.6)',
+              glassBorder: 'rgba(255, 255, 255, 0.08)',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #0b0f15;
+        color: #e2e8f0;
+        background-image: 
+          radial-gradient(circle at 15% 50%, rgba(59, 130, 246, 0.08) 0%, transparent 25%), 
+          radial-gradient(circle at 85% 30%, rgba(168, 85, 247, 0.08) 0%, transparent 25%);
+      }
+      /* Custom scrollbar for terminal output */
+      ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: rgba(24, 27, 33, 0.5);
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #2d333b;
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #475569;
+      }
+    </style>
+
+<link rel="stylesheet" href="/index.css">
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0"
+  }
+}
+</script>
+  <script type="module" crossorigin src="/assets/index-CQhsZZ1q.js"></script>
+</head>
+  <body>
+    <div id="root"></div>
+</body>
+</html>
